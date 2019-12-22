@@ -1,7 +1,9 @@
 package com.qa.tests;
 
 import org.testng.Assert;
+import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
@@ -18,7 +20,7 @@ public class LoginPageTest extends TestBase {
 		super();
 	}
 	
-	@BeforeMethod
+	@BeforeClass
 	public void setUp(){
 		initialization();
 		loginPage = new LoginPage();
@@ -39,7 +41,12 @@ public class LoginPageTest extends TestBase {
 		//System.out.println("logged in successfully");
 	}
 	
-	@AfterMethod
+	@Test(priority=3)
+	public void testM(){
+		System.out.println(".............");
+	}
+	
+	@AfterClass
 	public void tearDown(){
 		driver.quit();
 	}

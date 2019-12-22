@@ -2,7 +2,9 @@ package com.qa.tests;
 
 
 import org.testng.Assert;
+import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
@@ -21,7 +23,7 @@ public class HomePageTest extends TestBase {
 		super();
 	}
 	
-	@BeforeMethod
+	@BeforeClass
 	public void setUp(){
 		initialization();
 		loginPage = new LoginPage();
@@ -49,7 +51,7 @@ public class HomePageTest extends TestBase {
 		//System.out.println("third test case passed....");
 	}
 	
-	@AfterMethod
+	@AfterClass
 	public void tearDown(){
 		driver.quit();
 	}

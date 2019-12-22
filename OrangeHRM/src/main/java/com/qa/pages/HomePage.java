@@ -29,10 +29,5 @@ public class HomePage extends TestBase{
 			return new AdminPage();
 		}
 		
-		/*public void clickOnUserLink(){
-			Actions action = new Actions(driver);
-			action.moveToElement(target)
-		}*/
-		
 
 }
