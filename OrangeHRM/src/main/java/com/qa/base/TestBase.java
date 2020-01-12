@@ -26,7 +26,7 @@ public class TestBase {
 		
 		try{
 		prop = new Properties();
-		String filepath = "C:/Users/saroj/imp_workspace/OrangeHRM/src/main/java/com/qa/config/config.properties";
+		String filepath = "C://Users//saroj//git//orangeHRM//OrangeHRM//src//main//java\\com//qa//config//config.properties";
 		
 		FileInputStream fis = new FileInputStream(filepath);
 		prop.load(fis);
@@ -44,7 +44,7 @@ public class TestBase {
 		
 		String browserName = prop.getProperty("browser");
 		if(browserName.equals("chrome")){
-		System.setProperty("webdriver.chrome.driver", "C:\\Users\\saroj\\imp_workspace\\chromedriver_win32\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "C:\\Users\\saroj\\imp_workspace\\ch\\chromedriver.exe");
 		driver = new ChromeDriver();
 		}
 		

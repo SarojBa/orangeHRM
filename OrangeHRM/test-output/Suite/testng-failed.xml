@@ -6,25 +6,20 @@
   </listeners>
   <test name="Test(failed)">
     <classes>
-      <class name="com.qa.tests.AdminPageTest">
-        <methods>
-          <include name="tearDown"/>
-          <include name="setUp"/>
-        </methods>
-      </class> <!-- com.qa.tests.AdminPageTest -->
-      <class name="com.qa.tests.HomePageTest">
-        <methods>
-          <include name="verifyWelcomeLabelTest"/>
-          <include name="setUp"/>
-          <include name="tearDown"/>
-        </methods>
-      </class> <!-- com.qa.tests.HomePageTest -->
       <class name="com.qa.tests.LoginPageTest">
         <methods>
           <include name="tearDown"/>
           <include name="setUp"/>
         </methods>
       </class> <!-- com.qa.tests.LoginPageTest -->
+      <class name="com.qa.tests.LeavePageTest">
+        <methods>
+          <include name="verifyLeaveListTest"/>
+          <include name="setUp"/>
+          <include name="verifyLeavePageURLTest"/>
+          <include name="def"/>
+        </methods>
+      </class> <!-- com.qa.tests.LeavePageTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

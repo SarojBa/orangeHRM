@@ -4,15 +4,15 @@
 
 <listeners>
 		<listener class-name="com.qa.ExtentReportListener.ExtentReporterNG" />
-	</listeners>
+</listeners>
 	
   <test name="Test">
   
     <classes>
      
       <class name="com.qa.tests.LoginPageTest"/>
-       <class name="com.qa.tests.HomePageTest"/>
-      <class name="com.qa.tests.AdminPageTest"/>
+      <class name="com.qa.tests.LeavePageTest"/> 
+      
      
     </classes>
   </test> <!-- Test -->
