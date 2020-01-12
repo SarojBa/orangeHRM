@@ -49,7 +49,8 @@ public class LeavePageTest extends TestBase {
 	
 	@AfterClass
 	public void def(){
-		System.out.println("shut");
+		System.out.println("quit");
+		
 	}
 
 }
